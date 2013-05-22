@@ -1,0 +1,11 @@
+# Backup files
+*~
+*.bak
+\#*\#
+
+# Compiled files
+*.pyc
+
+# These files will automatically be downloaded
+GeoIPASNum2.csv
+GeoIPASNum2.zip

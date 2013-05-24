@@ -20,7 +20,7 @@ if not os.path.exists(LOCAL_FILE):
     urllib.request.urlretrieve(REMOTE_FILE, LOCAL_ZIP_FILE)
     with zipfile.ZipFile(LOCAL_ZIP_FILE) as zfin:
         for file in zfin.namelist():
-            zfin.extract(file)
+            zfin.extract(file, os.path.dirname(LOCAL_FILE))
 
 # Load the IP -> ASN mapping
 # Each line is of the form 'ip min,ip max,ASN'
